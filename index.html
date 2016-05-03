@@ -4,11 +4,118 @@
 <meta charset="utf-8">
 <meta name="viewport"  content="width=device-width, initial-scale=1">
 <title> Assignment Module 2 alex</title>
+
 <style>
-*{box-sizing=border-box;}
+
+/*general styling*/
+
+*{box-sizing=border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+	margin: 35px;
+	font-family: Helvetica;
+	color: #696969;	 
+}
+
+.box {
+    border: 2px dotted black;
+    margin: 10px;
+    overflow: auto;
+    /*position: relative;*/
+ }
+
+ .content{
+    padding: 35px 15px 15px 15px ;
+    background-color: #DCDCDC ;
+    font-family: Helvetica;
+    font-size: 7;
+}
+
+ .meat {
+    background-color: red;
+    border: 1px solid black;
+    float:right;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    font-size: 10;
+    font-family: Helvetica;
+    padding: 2px;
+ }
+
+/*the title of the sections*/
+
+#chickentext{
+    background-color: #5F9EA0 ;  
+}
+
+#beeftext{
+    background-color: #E6E6FA; 
+}
+
+ #sushitext{
+    background-color: #FFE4E1  ;
+ }
+
+
+/*media queryes*/
+
+/*Large devices */
+@media (min-width: 992px) {
+   .col-lg-4 {
+    float: left;
+    border: 1px solid green;
+  }
+  
+  .col-lg-4 {
+    width: 33.33%;
+  }
+ 
+}
+
+/*Medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+   .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 
 <body>
+	<h1 > Our Menu</h1>
+	<div >
+		<div class= "box col-md-12 .col-md-6">
+            <div class="meat" id="chickentext">Chicken</div>
+            <div class="content">
+			            <div>Chicken is not sushi. Chicken is not beef. What is chicken? Chicken is not sushi. Chicken is not beef. What is chicken? Chicken is not sushi. Chicken is not beef. What is chicken? Chicken is not sushi. Chicken is not beef. What is chicken? Chicken is not sushi. Chicken is not beef. What is chicken? Chicken is not sushi. Chicken is not beef. What is chicken? Chicken is not sushi. Chicken is not beef.   </div>
+            </div>
+		</div>
+		<div class= "box col-md-12 .col-md-6">
+         <div class="meat" id="beeftext">Beef</div>
+            <div class="content">
+		            <div>Beef is not chicken and it's not sushi either. Beef is not chicken and it's not sushi either.Beef is not chicken and it's not sushi either.Beef is not chicken and it's not sushi either.Beef is not chicken and it's not sushi either.Beef is not chicken and it's not sushi either.Beef is not chicken and it's not sushi either.Beef is not chicken and it's not sushi either.</div>
+             </div>
+		</div>
+		<div class= "box col-md-12 .col-md-6">
+             <div class="meat" id="sushitext">Sushi</div>
+             <div class="content">
+		           <div>Sushi with chicken probably isn't that bad, but but sushi with beef must be terrible. Sushi with chicken probably isn't that bad, but but sushi with beef must be terrible. Sushi with chicken probably isn't that bad, but but sushi with beef must be terrible. Sushi with chicken probably isn't that bad, but but sushi with beef must be terrible.  </div>
+        </div>
+		</div>
+
+	
 </body>
 </html>
